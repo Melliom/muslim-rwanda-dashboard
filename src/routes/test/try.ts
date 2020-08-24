@@ -1,8 +1,8 @@
-import { IRoute } from "interfaces/route";
-import baseURL from "constants/baseURL";
-import TryTest from "pages/Test/Try";
+import { IRoute } from 'interfaces/route';
+import baseURL from 'constants/baseURL';
+import TryTest from 'pages/Test/Try';
 
-const base: IRoute =  {
+const base: IRoute = {
   name: 'Try Test',
   protected: false,
   path: `${baseURL.test}/try`,

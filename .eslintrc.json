@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/extensions": [".js", ".ts"],
+    "import/resolver": {
+      "node": {
+        "typescript": {},
+        "extensions": [".js", ".ts"]
+      }
+    }
+  },
+  "rules": {
+    "arrow-parens": "off",
+    "@typescript-eslint/dot-notation": 0,
+    "@typescript-eslint/lines-between-class-members": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-case-declarations": "warn",
+    "react/no-array-index-key": "warn",
+    "react/jsx-key": "warn"
+  }
+}
