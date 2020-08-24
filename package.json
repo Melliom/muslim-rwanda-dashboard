@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx,js}\"",
     "precommit": "lint-staged",
     "commit": "clear && git-cz"
   },
@@ -35,9 +35,8 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,ts,tsx}": [
-      "lint:fix",
-      "git add"
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix \"src/**/*.{ts,tsx}\""
     ]
   },
   "commitlint": {
@@ -78,5 +77,6 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.1.0"
-  }
+  },
+  "author": "Hadad Dus"
 }
