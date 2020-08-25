@@ -40,6 +40,7 @@
     "@typescript-eslint/no-unused-vars": "error",
     "no-case-declarations": "warn",
     "react/no-array-index-key": "warn",
-    "react/jsx-key": "warn"
+    "react/jsx-key": "warn",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   }
 }
