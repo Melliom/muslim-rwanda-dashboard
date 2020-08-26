@@ -28,5 +28,5 @@ const Test: React.FC<TestProps> = () => {
 export default Test;
 
 // TODO: next
-// - add bootstrap, semantic UI, antdesign (global css)
+// - antdesign (global css) + tailwindcss config and watch a tutorial (postcss, autoprefixer)
 // - add utils (toast and axios)
