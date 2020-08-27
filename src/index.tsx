@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import Routes from 'routes';
 import store from 'redux/store';
 import * as serviceWorker from './serviceWorker';
-import 'antd/dist/antd.css';
-import 'assets/global.scss';
+import 'antd/dist/antd.less';
+import 'assets/styles/tailwind.main.css';
+import 'assets/styles/global.scss';
 
 ReactDOM.render(
   <Provider store={store}>
