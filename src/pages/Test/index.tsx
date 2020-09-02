@@ -15,7 +15,9 @@ const Test: React.FC<TestProps> = () => {
       },
     }: IRootState) => currentName,
   );
+
   const changeMessage = () => changeName('Holla there!')(dispatch);
+
   return (
     <div>
       <p className="text-primary-dark">{name}</p>
