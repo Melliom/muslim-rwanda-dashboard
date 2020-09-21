@@ -29,7 +29,3 @@ const Test: React.FC<TestProps> = () => {
 };
 
 export default Test;
-
-// TODO: next
-// - antdesign (global css) + tailwindcss config and watch a tutorial (postcss, autoprefixer)
-// - add utils (toast and axios)

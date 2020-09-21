@@ -4,7 +4,9 @@ import { INVALID_TOKEN } from 'constants/statusErrorCode';
 
 const token = getToken();
 
-const responseHandler = (response: any) => response.data;
+const responseHandler = (response: any) => {
+  return response?.headers?.authorization ? response : response.data;
+};
 const errorHandler = (error: any) => {
   if (error?.response?.data?.code === INVALID_TOKEN) {
     console.error('here error', error.response);

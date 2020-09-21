@@ -1,0 +1,18 @@
+@import 'assets/styles/_variables.scss';
+
+.authLayout {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  margin-top: -5rem;
+  &__content{
+    background: $color-light;
+    width: 100%;
+    padding: 1rem;
+    &__header{
+      span{
+        // color: rgb(160, 174, 192);
+      }
+    }
+  }
+}
