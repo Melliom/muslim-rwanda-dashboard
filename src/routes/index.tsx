@@ -16,12 +16,12 @@ const Routes = () => {
             path={route.path}
             component={() =>
               route.protected ? (
-                isAuthenticated ? (
+                isAuthenticated() ? (
                   <Dashboard>
                     <route.component />
                   </Dashboard>
                 ) : (
-                  <Redirect to="/test" />
+                  <Redirect to="/login" />
                 )
               ) : (
                 <route.component />

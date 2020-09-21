@@ -3,3 +3,4 @@ tailwind.config.js
 postcss.config.js
 craco.config.js
 config-overrides.js
+src/constants/validations/validationMessages.ts
